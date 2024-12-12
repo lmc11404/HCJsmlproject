@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /*overflow: hidden;*/
+    background-color: #f8f9fa;
+}
+
+header.hero {
+    position: relative;
+    height: 100vh;
+    background: url('landscape/aihouse2.jpg') no-repeat center center/cover;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-position: 50% 70%;
+}
+
+header.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+header.hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff9849;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header.hero button:hover {
+    background-color: #0056b3;
+}
+
+/* 商品區 */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    /*position: 50% 50%;*/
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+/* 促銷區 */
+.promotions {
+    background-color: #ffbe3be2;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* 雪花樣式 */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* 雪花下落動畫 */
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
