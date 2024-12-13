@@ -10,6 +10,7 @@ const hero = document.querySelector('.hero');
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
+
     snowflake.style.left = Math.random() * 100 + 'vw'; // 隨機水平位置
     snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // 隨機動畫時間
     snowflake.style.opacity = Math.random();
