@@ -11,12 +11,13 @@ const snowContainer = document.getElementById('snow-container');
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
-    /*
+
     snowflake.style.left = Math.random() * 100 + 'vw'; // 隨機水平位置
     snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // 隨機動畫時間
     snowflake.style.opacity = Math.random();
     snowflake.style.transform = `scale(${Math.random() * 0.5 + 0.5})`; // 隨機大小
-    */
+
+    /*
     const size = Math.random() * 5 + 5; // 隨機大小
     snowflake.style.width = `${size}px`;
     snowflake.style.height = `${size}px`;
@@ -25,7 +26,7 @@ function createSnowflake() {
     snowflake.style.opacity = Math.random();
 
     snowContainer.appendChild(snowflake);
-
+    */
     hero.appendChild(snowflake);
 
     // 動畫結束後移除雪花
