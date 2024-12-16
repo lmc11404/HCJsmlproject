@@ -48,6 +48,12 @@ header.hero button:hover {
     text-align: center;
 }
 
+.products h2 {
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: rgb(220, 247, 255);
+}
+
 /* 網格容器設置 */
 .product-grid {
     display: grid;
@@ -58,7 +64,7 @@ header.hero button:hover {
 
 /* 卡片樣式 */
 .product-card {
-    background: #fff;
+    background: #fbfbfb95;
     /* 卡片背景 */
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -97,6 +103,17 @@ header.hero button:hover {
     color: #555;
 }
 
+
+.product-info button {
+    background-color: #ff9849;
+    border: none;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 /* 促銷區 */
 .promotions {
     background-color: #ffbe3be2;
@@ -106,6 +123,15 @@ header.hero button:hover {
 }
 
 /* 雪花樣式 */
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
 .snowflake {
     position: absolute;
     top: -10px;
